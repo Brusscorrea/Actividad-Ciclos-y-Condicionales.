@@ -1,0 +1,27 @@
+ANALISIS:
+
+Realiza un programa que que simule el filtrado de señales utilizando la función de densidad
+de probabilidad (fdp) de la campana de Gauss (distribución normal).
+
+Donde:
+
+-x es la frecuencia,
+-μ es la media (en este caso, μ = 1000 Hz),
+-σ es la desviación estándar (en este caso σ =300 Hz).
+
+La fdp de la distribución normal se define como:
+		        F(x)= 1/σ✓2π * e^1/2(x-μ/σ)^2
+
+Para este problema, necesitamos calcular la probabilidad acumulada hasta una cierta frecuencia x. Esto se hace sumando los valores de la (fdp) para todas las frecuencias desde cero hasta x.
+
+-necesitamos encontrar el punto en el que la probabilidad acumulada supera el 30%.
+
+1.Definir la función de densidad de probabilidad (fdp) de la distribución normal.
+
+2.Calcular la probabilidad acumulada para cada frecuencia desde cero hasta la frecuencia de entrada.
+
+3.Verificar si la probabilidad acumulada supera el 30%. Si lo hace, la señal pasa; de lo contrario, es bloqueada.
+
+4.Repetir sobre diferentes frecuencias hasta encontrar el punto en el que la señal deja de ser bloqueada.
+
+-Dado que el paso de frecuencia es de 1 Hz, podemos repetir fácilmente sobre las frecuencias para encontrar el punto en el que la señal deja de ser bloqueada.
